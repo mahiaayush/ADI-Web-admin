@@ -1,0 +1,78 @@
+.otpDialogClass {
+    padding: 25px;
+}
+.otpDialogContentClass {
+    max-width: 450px ;
+    width: 100%;
+}
+
+.iconButtonClass {
+    float: right;
+    color: rgb(143, 132, 132);
+}
+
+.h2Class {
+    font-weight: 700;
+    color: black;
+}
+
+.h5SuccessClass {
+    color: green;
+    margin-right: 10px;
+}
+
+.h5ErrorClass {
+    color: red;
+    margin-right: 10px;
+}
+
+.divClass {
+    display: flex;
+}
+
+.pTitleClass {
+    color: gray;
+}
+
+.pValueClass {
+    color: rgb(26, 22, 22);
+}
+
+.textFieldFlex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 500px) {
+    .otpDialogClass {
+        padding: 12px;
+    }
+    .h2Class {
+        font-weight: 500;
+        color: black;
+    }
+    .divClass {
+        display: block;
+    }
+    .pValueClass {
+        color: rgb(78, 76, 76);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .otpDialogClass {
+        padding: 0px 0px 10px 0px;
+    }
+    .h2Class {
+        font-weight: 400;
+        color: black;
+    }
+    .divClass {
+        display: block;
+    }
+    .pValueClass {
+        color: rgb(78, 76, 76);
+    }
+}

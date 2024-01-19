@@ -1,0 +1,20 @@
+.cardpadding{ margin-top: 25px; padding: 20px;}
+.cardpaddingBottom{ padding-top: 30px;}
+.rangetoppera{ font-size: 18px;  color: #8888AA; text-transform: capitalize; font-weight: 400;}
+.rangetoppera b{ color: #2A2A3C; }
+
+.rangebotpera{ color: #2A2A3C; font-size: 16px; }
+.rangebotpera span{ display: inline-block; position: relative; padding: 0 0 0 20px; margin: 0 0 0 20px;}
+.rangebotpera b{ display: inline-block; position: relative; padding: 0 0 0 20px;}
+.rangebotpera span::after{ content: ""; position: absolute; left: 0px; top: 18px; width: 8px; height: 8px; background: #ec99d0; border-radius: 50%; }
+.rangebotpera b::after{ content: ""; position: absolute; left: 0px; top: 18px; width: 8px; height: 8px; background: #992572; border-radius: 50%; }
+
+.rangesliderUp{ width: 100%; position: relative;  margin: 10px 0 20px 0; }
+.rangeslider{ width: 100%; height: 8px; background: #ec99d0; border-radius: 24px; position: relative; overflow: hidden;}
+.rangesliderUp span{ width: 22px; height: 22px; background: #3D2AE7; border: 3px solid #fff; position: absolute; left: 0%; top:-8px; border-radius: 50%; font-size: 0px;}
+.rangesliderUp span::after{ content: ""; position: absolute; left: 6px; top:3px;  height: 7px; width: 4px; border-bottom: 1px solid #fff; border-right: 1px solid #fff;     transform: rotate(38deg);}
+.rangeslider cite{ width: 0%; background: #992572; height: 8px; position: absolute; left: 0px; top:0px; font-size: 0px;}
+
+@media screen and (max-width: 500px) {
+    .rangebotpera span{ width: 100%; display: block; margin-left: 0px;}
+  }

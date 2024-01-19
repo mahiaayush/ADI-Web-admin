@@ -1,0 +1,19 @@
+.externalTablePagination .MuiTablePagination-selectLabel {
+    display: none;
+}
+.externalTablePagination .css-ml5lie-MuiInputBase-root-MuiTablePagination-select {
+    display: none;
+}
+.externalTablePagination .MuiTablePagination-displayedRows {
+    display: none;
+}
+.css-1cepqqd {
+    background-color: #fff;
+    padding: 0px;
+}
+.textbuttonpadding {
+    padding: 0px 10px 10px 10px;
+}
+.externalTableBox {
+    margin-top: 1px;
+}

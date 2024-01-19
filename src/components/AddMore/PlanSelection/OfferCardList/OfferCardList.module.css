@@ -1,0 +1,95 @@
+.individualCardClass {
+  padding: 25px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  color: #fff;
+  border-radius: 8px;
+  background: linear-gradient(to bottom, #5664d2 0%, #323d95 100%);
+}
+
+.individualCardClass:nth-child(2n) {
+  background: linear-gradient(to bottom, #de6262 0%, hsl(320, 63%, 65%) 100%);
+}
+
+.individualCardClass i {
+  color: #fff;
+}
+.individualCardClass h2 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.tcButton {
+  color: gray;
+}
+
+.iconButtonClass {
+  float: right;
+  color: rgb(143, 132, 132);
+}
+
+.h2Class {
+  font-weight: 650;
+}
+
+.h5SuccessClass {
+  color: green;
+  margin-right: 10px;
+}
+
+.h5ErrorClass {
+  color: red;
+  margin-right: 10px;
+}
+
+.otpDialogContentClass {
+  max-width: 450px;
+  width: 100%;
+}
+
+.typographyClass {
+  font-size: large;
+}
+.typographyClass1 {
+  font-size: medium;
+}
+
+.error {
+  color: rgb(211, 47, 47);
+  text-align: center;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 15px;
+  margin-right: 60px;
+}
+
+@media screen and (max-width: 500px) {
+  .individualCardClass {
+    padding: 12px;
+  }
+  .h2Class {
+    font-weight: 500;
+  }
+  .typographyClass {
+    font-size: medium;
+  }
+  .typographyClass1 {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .individualCardClass {
+    padding: 0px 0px 10px 0px;
+  }
+  .h2Class {
+    font-weight: 400;
+  }
+  .typographyClass {
+    font-size: small;
+  }
+  .typographyClass1 {
+    font-size: smaller;
+  }
+}

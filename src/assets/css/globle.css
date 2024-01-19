@@ -1,0 +1,728 @@
+.cspCsmpClass {
+  color: #0000EE;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
+.status_badge {
+  border-radius: 5px;
+  padding: 2px 5px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  display: block;
+  min-width: 55px;
+}
+.tableHead tr th{
+  padding: 10px;
+}
+
+.status_badge_pending {
+  background: #feb017;
+}
+
+.status_badge_inactive {
+  background: #cfd2db;
+}
+
+.status_badge_active {
+  background: #33b960;
+  color: #ffffff;
+}
+
+.status_badge_banned {
+  background: #e35354;
+  color: #ffffff;
+}
+
+.tableHead {
+  background: #ddd;
+}
+.docItm {
+  display: block;
+}
+.sortArrow {
+  display: flex;
+  justify-content: space-between;
+}
+.whitebox {
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px rgb(0 0 0 / 12%), 0px 0px 0px 1px rgb(0 0 0 / 5%);
+  background-image: none;
+  background-color: #ffffff;
+  margin-top: 15px;
+}
+.btnHight{height: 50px;}
+.padding30{padding: 0 30px;}
+.m20{margin-top:20px ;padding: 20px 10px;}
+.margin10{margin: 10px;}
+.m20 .css-1d7tnih{width: 100%;}
+.m20 .MuiFormControl-root {
+  width: 98%;
+}
+/* .setHight >div {
+  padding: 12px;
+  line-height: 23px;
+} */
+
+.css-1xcahgr-MuiButtonBase-root-MuiTableSortLabel-root {
+  display: block;
+}
+
+.cardHeader {
+  background-color: #fdfdfd;
+  /* border       : 4px solid #fff; */
+}
+
+.tableContent {
+  text-align: center;
+  height: 215px;
+}
+
+.errorMessage {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.loading {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 215px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.linked_account .textbuttonpadding {
+  padding: 0px 10px 0px 10px;
+}
+
+.linked_account table tr td {
+  padding: 0px 16px;
+}
+
+.linked_account button {
+  margin-top: 10px;
+}
+
+.linked_account span {
+  padding: 2px;
+}
+
+.selectAction {
+  background: #fff;
+}
+
+.inputStyle.react-tel-input .form-control {
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.inputStyle.react-tel-input .special-label {
+  /* color: #1976d2; */
+  top: -1px;
+}
+
+.fileRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-col{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.upcomingSessionBorder {
+  width: 100%;
+  background: transparent linear-gradient(180deg, #5b2d95, #25164b) 0 0
+    no-repeat padding-box;
+  border-radius: 8px 8px 0 0;
+  opacity: 1;
+  padding: 12px;
+  height: 52px;
+}
+.upcomingSessionListing {
+  background: #fff 0 0 no-repeat padding-box;
+  box-shadow: 0 10px 30px rgb(37 22 75 / 20%);
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 20px;
+}
+.aboveUlDiv {
+  border-bottom: 1px solid #ccc;
+}
+.upcomingSessionListing ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0 0 0 -40px;
+  justify-content: center;
+}
+.upcomingSessionInnerBox {
+  color: #fff;
+}
+/* .upcomingSessionListing ul li:first-child,
+.upcomingSessionListing ul li:nth-child(2),
+.upcomingSessionListing ul li:nth-child(3) {
+  width: 18%;
+}
+.upcomingSessionListing ul li:nth-child(4) {
+  width: 23%;
+}
+.upcomingSessionListing ul li:nth-child(5) {
+  width: 14%;
+} */
+.upcomingSessionListing ul li {
+  padding: 8px;
+  font-size: 16px;
+  list-style: none;
+  font-size: 15px;
+  width: 100%;
+}
+.upcomingSessionListing ol {
+  display: flex;
+  list-style: none;
+  margin: 0 0 0 -40px;
+}
+.upcomingSessionListing ol li {
+  padding: 10px;
+  text-align: justify;
+}
+.arrowDiv {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.learnerListing tr th {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  display: table-cell;
+  vertical-align: inherit;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  text-align: center;
+  padding: 6px 16px;
+  color: #172b4d;
+  background-color: lightgray;
+}
+.learnerListing thead {
+  background: #ddd;
+}
+/* .learnerListing table {
+  background-color: white;
+} */
+
+.learnerListing tr td {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 30px;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  padding: 6px 16px;
+  color: #172b4d;
+  text-align: center;
+}
+
+.sessionStatusGroup tr td {
+  text-align: left;
+}
+
+.premiumUserCount td.expandRow  {
+  background-color: #FFF;
+}
+.expandRow > td > div > p {
+  margin: 0;
+}
+.expandRow > td.rowHead > div > p {
+  text-align: left;
+  font-weight: 500;
+}
+
+a.viewlink {
+  padding: 3px 9px;
+  text-decoration: none;
+  border: 1px solid rgba(86, 100, 210, 0.5);
+  font-weight: 600;
+  font-size: 0.8125rem;
+  line-height: 1.75;
+  color: #5664d2;
+  text-transform: none;
+}
+
+.all_documents {
+  display: flex;
+  justify-self: flex-start;
+}
+
+.articleIcon {
+  height: 27px;
+  margin-left: 31px;
+  transform: scale(3.8);
+}
+
+.document_details {
+  /* text-align: center; */
+  padding: 43px 12px 27px 18px;
+}
+
+.documentName {
+  padding-top: 35px;
+  font-weight: bold;
+}
+
+.weeklyRowHeader {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  background-color: DodgerBlue;
+}
+
+.weeklyRowHeader-item {
+  padding: 0.5em;
+  background: #efefef;
+  border: 3px solid #333;
+}
+
+.weeklyRowHeader.no-shrink {
+  flex-shrink: 0;
+}
+
+/* .weeklyRowHeader > div {
+  background-color: #f1f1f1;
+  font-size: 30px;
+} */
+
+.weeklyRow {
+  background: cornflowerblue;
+  height: 60px;
+  width: 400px;
+}
+
+.css-1oiwes3-MuiTableCell-root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  display: table-cell;
+  vertical-align: inherit;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  text-align: left;
+  padding: 12px 10px;
+  color: #172b4d;
+  word-break: break-word;
+}
+
+.documentCard {
+  display: flex;
+  flex-wrap: wrap;
+}
+.availabilityMainDiv .css-1gv9v7p-MuiTableCell-root {
+  border-bottom: none;
+}
+.customTableAlign .css-1gv9v7p-MuiTableCell-root{
+  width: 100%;
+}
+
+.tableHandler123 {
+  height: 500px;
+  overflow: auto;
+}
+
+.calendarMainDiv ul {
+  margin: 0px 0px 0px -40px;
+}
+.calendarMainDiv ul li {
+  list-style: none;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+}
+.calendarMainDiv ul li span {
+  width: 150px;
+}
+.calendarInnerDiv {
+  display: flex;
+  height: auto;
+  align-items: center;
+  margin-left: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.calendarInnerDiv aside {
+  display:none;
+}
+.calendarInnerDiv aside:nth-child(1), .calendarInnerDiv aside:nth-child(2), .calendarInnerDiv aside:nth-child(3) {
+  display:block;
+}
+.calendarInnerDiv aside.scheduled, aside.scheduled {
+  align-items: center;
+  /* width: 49%; */
+  background: rgb(2, 136, 209);
+  margin: 4px;
+  padding: 4px;
+  color: #fff;
+  border-radius: 4px;
+}
+.calendarInnerDiv aside.completed, aside.completed {
+  align-items: center;
+  /* width: 49%; */
+  background: rgb(46, 125, 50);
+  margin: 4px;
+  padding: 4px;
+  color: #fff;
+  border-radius: 4px;
+}
+.calendarInnerDiv aside.cancelledByLMC, aside.cancelledByLMC {
+  align-items: center;
+  /* width: 49%; */
+  background: rgb(211, 47, 47);
+  margin: 4px;
+  padding: 4px;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: line-through;
+}
+.calendarInnerDiv aside.notCompletedNoShow, aside.notCompletedNoShow {
+  align-items: center;
+  /* width: 49%; */
+  background: rgb(237, 108, 2);
+  margin: 4px;
+  padding: 4px;
+  color: #fff;
+  border-radius: 4px;
+}
+.calendarRightInnerDiv aside {
+  align-items: center;
+  /* width: 49%; */
+  background: #5664d2;
+  margin: 4px;
+  padding: 4px;
+  color: #fff;
+  border-radius: 4px;
+}
+input.classDatepicker {
+  font: inherit;
+  letter-spacing: inherit;
+  color: black;
+  height: 50px;
+  margin: 0;
+  padding: 8.5px 14px;
+  padding-right: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 150px;
+  background: #fff;
+}
+.headerBoxesRight {
+  border: 1px solid lightgray;
+  padding: 0px;
+  background: #fff;
+  border-radius: 8px;
+  min-height: 150px;
+}
+.rightSideFloatingBar {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 96%;
+}
+.displayName {
+  text-transform: capitalize;
+}
+tbody h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+}
+.tableContent.loaderClass {
+  text-align: center;
+}
+
+span.scheduled {
+  background: rgb(2, 136, 209);
+  padding: 8px;
+  color: #fff;
+}
+span.completed {
+  background: rgb(46, 125, 50);
+  padding: 8px;
+  color: #fff;
+}
+span.cancelledByLMC {
+  background: rgb(211, 47, 47);
+  padding: 8px;
+  color: #fff;
+  text-decoration: line-through;
+}
+span.notCompletedNoShow {
+  background-color: rgb(237, 108, 2);
+  padding: 8px;
+  color: #fff;
+}
+.datePickerClass button:nth-child(1) {
+  color: black !important;
+}
+.datePickerClass button.css-15cw4dm-MuiButtonBase-root-MuiIconButton-root {
+  color: grey !important;
+  background-color: #fff !important;
+}
+.datePickerClass button.css-1r9km2b-MuiButtonBase-root-MuiIconButton-root {
+  color: grey !important;
+  background-color: #fff !important;
+}
+/* .datePickerClass button.css-76c2wq-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #0ca31e !important;
+} */
+.datePickerClass button.css-4712e8-MuiButtonBase-root-MuiIconButton-root,
+ .datePickerClass button.css-yde6qz-MuiButtonBase-root-MuiIconButton-root {
+  color: white !important;
+}
+/* .datePickerClass button..css-yde6qz-MuiButtonBase-root-MuiIconButton-root {
+  color: white !important;
+} */
+.flexClassMain1 {
+  display: flex;
+  margin-bottom: 10px;
+}
+.flexClassMain2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.sessionsListClass .css-1oiwes3-MuiTableCell-root {
+  padding: 10px;
+}
+.mobileNumberUpDownArrow input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#popupflex .css-x9viup-MuiPaper-root-MuiDialog-paper {
+  flex-basis: 430px;
+}
+
+.entityListMainDiv table tr th:nth-child(2), .entityListMainDiv table tr th:nth-child(4), .entityListMainDiv table tr th:nth-child(5), .entityListMainDiv table tr th:nth-child(6), .entityListMainDiv table tr th:nth-child(7) {
+  cursor: default !important;
+}
+.entityListMainDiv table tr th:nth-child(2) span, .entityListMainDiv table tr th:nth-child(4) span, .entityListMainDiv table tr th:nth-child(5) span, .entityListMainDiv table tr th:nth-child(6) span, .entityListMainDiv table tr th:nth-child(7) span {
+  display: none;
+}
+
+.internalListUsers table tr th span {
+  display: none;
+}
+.externalListUsers table tr th:nth-child(2) span, .externalListUsers table tr th:nth-child(3) span, .externalListUsers table tr th:nth-child(4) span {
+  display: none;
+}
+.itemListSorting table tr th:nth-child(4) span {
+  display: none;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    color: white;
+    background-color: black;
+  }
+  .learnerListing tr td {
+    color: white;
+  }
+  .premiumUserList tr td {
+    color: #000;
+  }
+  .upcomingSessionListing {
+    color: black;
+  }
+  .cardHeader {
+    background-color: #fdfdfd;
+    color: #222b36;
+  }
+  .sortArrow {
+    color: #222b36;
+  }
+  .whitebox {
+    background-color : #222b36;
+  }
+  .selectAction {
+    color: black;
+  }
+  .status_badge_inactive {
+    background-color: grey;
+  }
+  .ActionButtonSessions {
+    color: #000;
+    margin: 4px 0px 0px -2px;
+  }
+  .logoFilterclass {
+    background-color: #fff;
+  }
+  .linkClass {
+    color: #809fff;
+  }
+  .cspCsmpClass {
+    color: #809fff;
+    font-size: 12px;
+  }
+}
+
+.sessionsListClass.sessouserIndex table tr td:first-child{ width: 300px; padding-left: 10px;}
+.sessionsListClass.sessouserIndex table tr td:last-child{ padding-right: 10px;}
+.sessionsListClass.sessouserIndex table tr td:nth-child(4){ width: 90px;}
+.sessionsListClass.sessouserIndex table tr td:nth-child(5){ width: 140px;}
+.sessionsListClass.sessouserIndex table tr td .starClass svg{font-size: 12px;}
+.sessionsListClass.sessouserIndex table tr td{ font-size: 13px; padding-left: 5px; padding-right: 5px;}
+.sessionsListClass.sessouserIndex table tr th{ font-size: 13px; padding-left: 5px; padding-right: 5px;}
+
+.sessionsListClass.sessouserIndex table tr th:first-child{ padding-left: 10px;}
+.sessionsListClass.sessouserIndex table tr th:last-child{ padding-right: 10px;}
+.sessionsListClass.sessouserIndex table tr th{ line-height: 16px;}
+
+.sessionsListClass.learningHubOrders table tr td:first-child { width: 165px; }
+
+.progTitle {
+  text-transform: lowercase;
+}
+
+.progTitle::first-letter {
+  text-transform: uppercase;
+}
+
+.status_badge-sessions {
+  border-radius: 5px;
+  padding: 2px 5px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  min-width: 55px;
+}
+
+.scheduledSessions {
+  background: rgb(2, 136, 209);
+  color: #ffffff;
+}
+
+.scheduled-notcompleted_noshow {
+  background: rgb(237, 108, 2);
+  color: #ffffff;
+}
+
+.scheduled-completed {
+  background: rgb(46, 125, 50);
+  color: #ffffff;
+}
+
+.cancelledSessions {
+  background: rgb(211, 47, 47);
+  color: #ffffff;
+}
+
+.error404 { display: flex;
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin: 150px 0 0px 0;
+  position: relative;
+}
+
+.error404in{ width: 100%; }
+.error404in .container{ padding: 0px 0 0 133px; z-index: 2;}
+
+.error404in h1 {
+  font-size: 182px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 140px;
+  font-family: "industry",sans-serif;
+  color: #1b1450;
+  text-align: center;
+  margin: auto;
+}
+
+.error404in h1 span {
+  color: #5664d2;
+  font-size: 87px;
+  display: block;
+  line-height: 88px;
+}
+
+.bgTextErrorNext {
+  width: 100%;
+  text-align: center;
+  color: #8237c2;
+  font-family: "HyperwaveThree",monospace;
+  font-size: 550px;
+  -webkit-transform: rotate(356deg);
+  transform: rotate(356deg);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10%;
+  z-index: 0;
+  opacity: .3;
+}
+
+.error404in h2 {
+  color: #1b1450;
+  font-size: 40px;
+  font-family: "Space Grotesk",monospace;
+  font-weight: 400;
+  margin: 31px 0 12px;
+  text-align: center;
+}
+
+.error404in p {
+  width: 588px;
+  color: #5664d2;
+  line-height: 24px;
+  text-align: center;
+  margin: auto;
+}
+
+.success {
+  color: #18863d;
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.error {
+  color:rgb(211, 47, 47);
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.readOnly {
+  pointer-events: none;
+}
+
+.readOnlyInput {
+  pointer-events: none;
+  background: #E7E7E7;
+}
+
+.readOnlyLabel {
+  pointer-events: none;
+  color: #333333;
+}
+
+.overflowXScroll {
+  overflow-x: scroll;
+}

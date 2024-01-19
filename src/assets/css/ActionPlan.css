@@ -1,0 +1,155 @@
+.headwrap{
+    display:flex;
+    justify-content: space-between;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-bottom:1px soldi #000;
+}
+
+.box{
+    background-color: #ede5e5;
+}    
+.box .box-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #5664d2;
+    margin:0px;
+}
+.box .swot-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #b5bcf1;
+    margin:0px;
+}
+
+.box-header h3{
+    padding:15px;
+    color:#fff;
+    margin:0px;
+}
+
+.mb-0{
+    margin-bottom:0px;
+}
+.mt-0{
+    margin-top:0px;
+}
+
+.fieldGroup{
+    padding:15px;
+}
+
+.fieldGroup p{
+    margin-top: 0px;
+}
+
+.taskRow{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom:10px;
+}
+
+.taskRow p{
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.small-text{
+    font-size: 0.7rem;
+}
+
+.pt-0{
+    padding-top:0;
+}
+@media (prefers-color-scheme: dark) {
+    .box {
+      background-color: gray;
+    }
+  } 
+
+  cspAccordianDv{ width: 100%; margin: 0px 0 0px 0}
+  .cspAccordianDv section{ width: 100%;}
+  .cspAccordianDv hgroup{ width: 100%; background: linear-gradient( to bottom, #1DCDA7,  #28A054 ); min-height: 60px; display: flex; align-items: center;flex-wrap: wrap; color: #fff; font-weight: 700; text-shadow: 0px 3px 6px rgba(37, 22, 75, 0.2); font-size: 22px; padding: 0 0 0 0px; cursor: pointer;}
+  .cspAccordianDv hgroup > div{ font-weight: 700; display: flex; justify-content: space-between;}
+  .cspAccorCntr{ padding: 0px;overflow-x: hidden;}
+  .cspAccorCntr span{margin-left: auto; margin-right: 10px; line-height: 30px; color: #25164B; font-size: 16px; box-shadow: 0 0 0 #fff;}
+  .cspAccorCntr fieldset p{
+      word-wrap: break-all;
+  }
+  .cspAccordianDv fieldset{ width: 100%; border: 1px solid rgba(140, 127, 158, 1);  padding: 30px;  border-radius: 8px; margin: 30px 0 40px 0}
+  .cspAccordianDv legend{ width: auto; font-weight: 700; padding: 0 20px; margin: auto;}
+  .cspAccordianDv h1{ background: rgba(39, 36, 96, 1); color: #fff; font-size: 16px;  padding: 10px 20px; display: inline-block; margin: 0 0 20px 0}
+  .cspAccordianDv colgroup{ width: 100%; font-style: normal; display: block; padding: 10px 10px 10px 10px;}
+  .cspAccordianDv hgroup > div svg{ font-size: 30px;}
+  .cspAccordianDv ol{ width: 100%; display: flex; margin: 0px; flex-wrap: wrap; margin-bottom: 25px; padding: 0px; overflow: hidden;}
+  .cspAccordianDv ol li{ width: 22.7%; background: #fff; display: inline-block; font-size: 12px; line-height: 20px; padding: 10px; position: relative; margin: 0 3% 15px 0;}
+  .cspAccordianDv ol li span{ color:#FF943E}
+  .cspAccordianDv ol li:nth-child(4n){ margin-right: 0px;}
+  .cspAccordianDv ol li:after:nth-child(4n){display: none}
+  .cspAccordianDv ol li:after{content: "";
+      position: absolute;
+      right: -47px;
+      top: 0px;
+      bottom: 0px;
+      width: 45px;
+      height: 2px;
+      border: 1px dashed rgba(6, 6, 7, 0.5);
+      margin: auto;}
+  .cspAccordianDv ol li:last-child::after{ display: none;}
+  .cspAccordianDv h2{ font-size: 13px; margin: 0 0 18px 0; font-weight: 600;}
+  .cspAccordianDv article{ background: #fff; box-shadow: 0px 3px 6px #25164B1A;
+      border-radius: 4px; display: flex; flex-wrap: wrap; padding: 20px;}
+      .cspAccordianDv article h3{ font-size: 18px; line-height: 26px; width: 100%; margin: 0 0 20px 0}
+  .cspAccordianDv button{ background: #D7CFEA; border-radius: 25px; padding: 0 20px; min-height: 40px; border: 0px; margin: 5px 5px 5px 0;}
+  /* .cspAccordianDv[classattr="capapp2"] h1{ margin-bottom: 25px;} */
+  .cspAccordianDv fieldset ul{ width: 100%; margin: 0px; display: flex; flex-wrap: wrap; justify-content: flex-start;}
+  .cspAccordianDv fieldset ul li{ margin: 10px 20px}
+  .cspAccordianDv fieldset ul li button{min-height: 55px; color: #fff; font-weight: 700; background: linear-gradient( to bottom, #4E51A5, #344382 ); padding: 0px 25px; border: 0px; border-radius: 30px; display: flex; align-items: center; justify-content: center; text-align: center;}
+  .cspAccordianDv main{ display: flex; flex-wrap: wrap; justify-content: space-between;}
+  .cspAccordianDv main fieldset{ width:31%;}
+  .cspAccordianDv main fieldset ul{ padding: 0px;}
+  .cspAccordianDv main fieldset ul li{ width: 100%; margin: 0px; padding: 0px;}
+  .cspAccordianDv main fieldset ul li button{ width: 100%;}
+  @media screen and (max-width:1280px){
+      .cspAccordianDv hgroup{ padding: 0 30px;}
+      .cspAccordianDv hgroup .cspAccorCntr{ padding: 0px;}
+      .cspAccorCntr{ width: 100%; padding: 0 30px;}
+      .cspAccordianDv colgroup:last-child{ padding-bottom: 0px;}
+      .cspAccordianDv legend{ font-size: 18px; line-height: 22px;}
+      /* .cspAccordianDv ol{ flex-wrap: nowrap; overflow: auto; padding-bottom: 10px;} */
+      }
+      @media screen and (max-width:1100px){
+          .cspAccordianDv fieldset ul li{ margin: 3px;}
+          .cspAccordianDv main fieldset{ width:32.5%; padding: 15px;}
+      }
+      @media screen and (max-width:900px){
+      .cspAccorCntr{ padding: 0 20px}
+      .cspAccordianDv fieldset{ padding: 20px 10px;}
+      .cspAccordianDv h1{ font-size: 18px; line-height: 24px; padding: 5px 10px;}
+      .cspAccorCntr p{ font-size: 16px; line-height: 22px;}
+      .cspAccordianDv hgroup .cspAccorCntr{ font-size: 18px; line-height: 20px; padding-top: 3px; padding-bottom: 3px;}
+      .cspAccorCntr span{ line-height: 16px;}
+      .cspAccordianDv h2{ font-size: 18px; line-height: 24px;}
+      .cspAccordianDv ol li{ width: 240px; flex: 0 0 auto; margin-left: 50px;}
+      .cspAccordianDv ol{ flex-wrap: nowrap; overflow: auto; padding-bottom: 10px;}
+      .cspAccordianDv ol li:first-child{ margin-left: 0px;}
+      .cspAccordianDv button{ font-size: 16px; line-height: 18px;}
+      .cspAccordianDv hgroup{ padding: 0 20px;}
+      .cspAccordianDv hgroup > div{ align-items: center;}
+      }
+      @media screen and (max-width:700px){
+          .cspAccordianDv main fieldset{ width:100%; margin-top: 0px;}
+          .cspAccordianDv main fieldset:last-child{ margin-bottom: 0px;}
+      }
+      @media screen and (max-width:400px){
+          .cspAccordianDv button, .cspAccordianDv fieldset ul li{ width: 100%; margin-right: 0px;}
+      }
+      @media (prefers-color-scheme: dark) {
+        .cspAccordianDv ol li {
+            color: #000;
+        }
+        .cspAccordianDv article h3 {
+            color: #000;
+        }
+      }

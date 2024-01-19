@@ -1,0 +1,16 @@
+.tabHandlerMain {
+  width: 100%;
+  /* border-bottom: 1px solid rgba(224, 224, 224, 1); */
+  /* background-color: #fff; */
+  margin-top: 30px;
+}
+
+.tabActive {
+  border-bottom: 2px solid #5664d2;
+  color: #5664d2;
+}
+
+.tabcustomClass {
+  padding-top: 10px;
+  margin-bottom: 40px;
+}

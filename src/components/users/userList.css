@@ -1,0 +1,47 @@
+.MuiAvatar-root {
+    float: left;
+}
+span.username {
+    float: left;
+    padding: 10px;
+    font-weight: 600;
+}
+.avatar_icon
+{
+    height: 42px;
+    width: 42px;
+}
+
+.externalTable {
+    border: 0px;
+    box-shadow: 0 0 0 #fff;
+    background: #fff;
+    border-radius: 0px;
+}
+
+.card_header {
+    width: 50%;
+    float: left;
+}
+.card_header_button {
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding: 10px;
+}
+
+.header_divider
+{
+    width: 100%;
+    float: left;
+}
+
+.linkoff_icon
+{
+    text-align: right;
+}
+
+.joincode
+{
+    margin-top: 10px;
+}

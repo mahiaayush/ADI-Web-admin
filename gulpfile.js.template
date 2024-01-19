@@ -1,0 +1,91 @@
+const argv = require('yargs').argv;
+const gulp = require('gulp');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
+const stylus = require('gulp-stylus');
+const include = require('gulp-include');
+const minifyCss = require('gulp-minify-css');
+const autoprefixer = require('gulp-autoprefixer');
+const rsync = require('gulp-rsync');
+const print = require('gulp-print');
+const sourcemaps = require('gulp-sourcemaps');
+const babel = require("gulp-babel");
+const shell = require('gulp-shell');
+const GulpSSH = require('gulp-ssh');
+
+const fs = require('fs');
+const del = require('del');
+const path = require('path');
+const extend = require('node.extend');
+
+
+gulp.task('make', ['images', 'js', 'css', 'jsx']);
+
+gulp.task('images', () => {
+    gulp
+        .src('assets/images/**')
+        .pipe(gulp.dest('build/public/images/'));
+
+    gulp
+        .src('assets/favicon*')
+        .pipe(gulp.dest('build/public/'));
+});
+
+gulp.task('clean', () => {
+    del([
+        'build/**'
+    ]);
+});
+
+gulp.task('js', () => {
+    gulp.src([
+        'assets/js/zepto.js',
+        'assets/js/*'
+    ])
+        .pipe(concat('all.js'))
+        .pipe(gulp.dest('build/public/js/'));
+});
+
+gulp.task('jsx', () => {
+    gulp.src('views/components/*')
+        .pipe(include())
+        .pipe(babel())
+        .pipe(gulp.dest('build/public/components/')) // for script tag src
+        .pipe(gulp.dest('build/views/components/')); // for direct embedding <% include .... %>
+
+    gulp.src('views/pages/*')
+        .pipe(gulp.dest('build/views/'))
+});
+
+gulp.task('css', () => {
+    gulp.src([
+        'assets/css/normalize.css',
+        'assets/css/*.css',
+        'assets/css/mixins.styl',
+        'assets/css/*.styl'
+    ])
+        .pipe(concat('all.styl'))
+        .pipe(stylus())
+        .pipe(autoprefixer({
+            browser: "> 1%, last 2 versions, Firefox ESR"
+        }))
+        .pipe(gulp.dest('build/public/css/'))
+});
+
+gulp.task('watch', () => {
+    gulp.watch([
+        'assets/css/*'
+    ], ['css']);
+
+    gulp.watch([
+        'assets/images/**'
+    ], ['images']);
+
+    gulp.watch([
+        'assets/js/*'
+    ], ['js']);
+
+    gulp.watch([
+        'views/**'
+    ], ['jsx']);
+});

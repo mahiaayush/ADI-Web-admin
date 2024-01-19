@@ -1,0 +1,55 @@
+.container {
+  padding: 25px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  overflow: visible;
+}
+.row {
+  margin-bottom: 15px;
+}
+
+.rowselect{
+  margin-bottom: 15px;
+  max-width: 400px;
+}
+.priceOfferSel {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -15px; */
+  display: flex;
+  justify-content: flex-end;
+}
+.priceOfferSel div {
+  color: #5664d2;
+  font-size: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.rowselect{ position: relative; margin-bottom: 15px;}
+.textFieldInner {
+  z-index: 0;
+}
+.headingGap {
+  width: 150px;
+}
+.headingGap1 {
+  font-weight: 400;
+  width: 150px;
+  text-decoration: line-through;
+}
+
+.removeClass {
+  margin-left: 15px;
+  text-decoration: underline;
+  color: red;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.small{
+  font-size: 14px;
+}

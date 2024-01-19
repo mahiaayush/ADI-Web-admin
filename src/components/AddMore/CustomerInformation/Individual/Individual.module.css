@@ -1,0 +1,83 @@
+.individualCardClass {
+  padding: 25px;
+}
+
+.textFieldFlex {
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.textFieldInner {
+  margin: 10px;
+}
+
+.buttonMainParent {
+  display: flex;
+  justify-content: flex-end;
+  margin: 50px 10px 0px auto;
+}
+
+.mobileNoClass, .mobileNoClass1 {
+  width: 48%;
+  position: relative;
+}
+
+.mobileNoClass cite {
+  font-weight: 700;
+  font-style: normal;
+  position: absolute;
+  left: 20px;
+  top: 26px;
+}
+
+.mobileNoClass input {
+ padding-left: 50px;
+}
+
+.errorClass {
+  color: red;
+  margin: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .textFieldFlex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .mobileNoClass, .mobileNoClass1 {
+    width: 98%;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .individualCardClass {
+    padding: 12px;
+  }
+  .buttonMainParent {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 10px 0px auto;
+  }
+  .mobileNoClass, .mobileNoClass1 {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .individualCardClass {
+    padding: 0px 0px 10px 0px;
+  }
+  .textFieldFlex {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 300px) { 
+  .mobileNoClass, .mobileNoClass1 {
+    width: 92%;
+  }
+}

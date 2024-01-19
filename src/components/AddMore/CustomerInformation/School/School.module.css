@@ -1,0 +1,48 @@
+.schoolCardClass {
+  padding: 25px;
+}
+
+.buttonMainParent {
+  display: flex;
+  justify-content: flex-end;
+  margin: 50px 0px 0px auto;
+}
+
+.buttonMainParent p {
+  margin-right: 15px;
+}
+
+.buttonMainParent p b {
+  color: #0000ee;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.mobileNumberClass {
+  width: 98%;
+  position: relative;
+}
+
+.mobileNumberClass cite {
+  font-weight: 700;
+  font-style: normal;
+  position: absolute;
+  left: 26px;
+  top: 40px;
+}
+
+.mobileNumberClass input {
+  padding-left: 45px;
+ }
+
+@media screen and (max-width: 400px) {
+  .buttonMainParent p {
+    margin: 0px 15px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .buttonMainParent p {
+    margin: 0px;
+  }
+}

@@ -1,0 +1,28 @@
+.steppersMain {
+  text-align: center;
+  width: 100%;
+  padding: 35px 35px 35px 35px;
+}
+
+.labelClass {
+  font-size: 18px;
+  font-weight: inherit;
+}
+
+@media screen and (max-width: 500px) {
+  .steppersMain {
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+  }
+  .labelClass {
+    font-size: 10px;
+    font-weight: inherit;
+  }
+}
+
+@media screen and (max-width: 345px) {
+    .steppersMain {
+        padding: 8px;
+    }
+}

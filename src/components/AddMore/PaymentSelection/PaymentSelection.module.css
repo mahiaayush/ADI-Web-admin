@@ -1,0 +1,87 @@
+.container {
+  padding: 25px;
+  margin-top: 30px;
+}
+
+.qrImageClass {
+  max-width: 240px;
+  margin: auto;
+  display: flex;
+}
+
+.circularProcess {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cashHeadingClass {
+  margin-bottom: 10px;
+}
+
+.submitDoneClass {
+  width: 20%;
+  margin: 15px auto;
+  display: flex;
+}
+
+.cashMainClass {
+  max-width: 360px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.qrMainClass {
+  max-width: 330px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin: 25px auto;
+}
+
+.circularProcess {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  background-color: rgb(255 255 255 / 70%);
+  z-index: 99;
+  height: 100%
+}
+
+.wrapper{
+  position: relative;
+}
+
+@media screen and (max-width: 450px) {
+  .qrImageClass {
+    max-width: 190px;
+  }
+  .cashHeadingClass {
+    text-align: center;
+    margin: 0px auto 15px auto;
+  }
+  .submitDoneClass {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cashMainClass {
+    flex-direction: column;
+  }
+  .cashMainClass button {
+    width: 100%;
+  }
+  .qrMainClass {
+    flex-direction: column;
+   }
+   .btnMainClass {
+    width: 100%;
+   }
+}

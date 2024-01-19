@@ -1,0 +1,10 @@
+.circal {
+    border: 8px solid #3a9fae;
+    background-color: #ffffff;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}

@@ -1,0 +1,16 @@
+.add_user {
+  height: 100%;
+  width: 100%;
+}
+
+.user_type {
+  max-height: 300px;
+}
+
+.user_detail {
+  max-height: calc(100% - 64px);
+}
+
+.user_type_select {
+  margin-top: 5px;
+}

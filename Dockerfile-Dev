@@ -1,0 +1,77 @@
+########
+# Docker image optional for dev environment to do in container debug of source code
+########
+FROM public.ecr.aws/w5i2y4u3/devclever-india/lyc/nginx:latest As Stage1
+
+# Load all the environment variables
+ARG ENV_VARIABLES
+
+ARG BUILD_ID
+ENV BUILD_ID=$BUILD_ID
+
+LABEL stage=Stage1
+LABEL build=$BUILD_ID
+
+ENV NODE_ENV=production \
+    PROJECT_HOME=/usr/app/ \
+    DEBUG="app:*" \
+    BUILD_DEPS="git python build-essential"
+
+# create project home
+RUN mkdir -p ${PROJECT_HOME}
+
+# switch to working directory
+WORKDIR ${PROJECT_HOME}
+
+# For all the items in the build argument create a custom .env file
+#RUN IFS=';'; \
+#    for item in $ENV_VARIABLES; do \
+#    echo $item >> "${PROJECT_HOME}/.env"; \
+#    done;
+
+# RUN echo "${PROJECT_HOME}/.env"
+
+# Install app dependencies
+# A wildcard is used to ensure both package.json AND package-lock.json are copied
+COPY package*.json ${PROJECT_HOME}
+
+# install deps
+RUN apt-get update > /dev/null \
+    && apt-get install -y -qq --no-install-recommends ${BUILD_DEPS} \
+    vim curl > /dev/null
+
+#npm install
+RUN npm i -g npm@6 \
+    && npm install --quiet
+
+# copy source code and run the build
+COPY . $PROJECT_HOME
+
+# Exporting to the environment before build rather than using .env file
+RUN IFS=';'; \
+    for item in $ENV_VARIABLES; do \
+#    echo $item; \
+    export $item; \
+    done \
+    && npm run build
+
+# RUN npm run build
+
+# clear the available sites
+RUN rm /etc/nginx/conf.d/*
+
+# copy nginx file
+COPY nginx/nginx.conf /etc/nginx/conf.d/
+COPY nginx/basic.conf /etc/nginx/conf.d/
+
+# forward request and error logs to docker log collector
+RUN ln -sf /dev/stdout /var/log/nginx/access.log \
+    && ln -sf /dev/stderr /var/log/nginx/error.log
+
+#cleanup
+RUN apt-get purge -y ${BUILD_DEPS} > /dev/null \
+    && rm -rf /var/lib/apt/lists/*
+
+EXPOSE 80 443 8080
+
+CMD ["nginx", "-g", "daemon off;"]

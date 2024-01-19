@@ -1,0 +1,60 @@
+app:
+    name: lyc-web-admin
+    code: LYCWEBADMIN
+    notify: veative-alerts@ecloudcontrol.com
+
+build:
+    version: 0.4
+    env: DEV
+    build_file: none
+    args:
+     SONARQUBE: disable
+     SONAR_LOGIN_TOKEN: $${build.token.sonar} 
+     SONAR_HOST_URL: https://devclever-india-dev-sonarqube-8-2.0de945bd.lowtouch.cloud
+     SONAR_PROJECT_NAME: lyc-web-admin
+     SONAR_PROJECT_KEY: lyc-web-admin
+     SCAN_LANG: node
+     NODE_MODULES: typescript
+     NPM_RUN_SCRIPT: "prod:build"
+    output_files: output/*.zip
+    image_template: node-14.16
+
+deploy:
+    context: DevClever-India/DEV
+    replicas: 1
+    strategy : rolling
+    ready_seconds : 60
+    port:
+    - 3000
+    
+properties:
+    NODE_ENV: production
+    REACT_APP_TEST_ID: "1206691"
+    REACT_APP_ASSIGNMENT_TEST_ID: "1208625"
+    REACT_APP_INTERVIEWER_DOMAIN: "@veative.com"
+    REACT_APP_WEB_ADMIN: "https://devclever-india-dev-lyc-admin-0-4.0de945bd.lowtouch.cloud/api/v1"
+    REACT_APP_WEB_ADMIN_V2: "https://devclever-india-dev-lyc-admin-0-4.0de945bd.lowtouch.cloud/api/v2"
+    REACT_APP_WEB_ADMIN_DATA_V1: "https://devclever-india-dev-lyc-admindata-0-1.0de945bd.lowtouch.cloud/api/v1"
+    REACT_APP_WEB_ADMIN_NEW: "https://devinapi.launchmycareer.com"
+    REACT_APP_COGNITO_REGION: "ap-south-1"
+    REACT_APP_COGNITO_USER_POOL_ID:
+        vault: REACT_APP_COGNITO_USER_POOL_ID
+    REACT_APP_COGNITO_WEB_CLIENT_ID: 4dmpqukkkbhcokgg8k1t56ft4d
+    REACT_APP_COGNITO_EXTERNAL_USER_POOL_ID: "ap-south-1_3zDVQYUAQ"
+    REACT_APP_COGNITO_AUTHENTICATION_FLOW: "USER_SRP_AUTH"
+    REACT_APP_COGNITO_OAUTH_DOMAIN: "admin.auth.ap-south-1.amazoncognito.com"
+    REACT_APP_COGNITO_OAUTH_SCOPE: "aws.cognito.signin.user.admin,email,openid,profile"
+    REACT_APP_COGNITO_OAUTH_REDIRECT_LOGIN: "https://devclever-india-dev-lyc-web-admin-0-4.0de945bd.lowtouch.cloud/callback"
+    REACT_APP_COGNITO_OAUTH_REDIRECT_LOGOUT: "https://devclever-india-dev-lyc-web-admin-0-4.0de945bd.lowtouch.cloud/logout"
+    REACT_APP_COGNITO_OAUTH_RESPONSE_TYPE: "code"
+    S3_BUCKET_STATIC_URL: "https://lyc-staticcontenet.s3.ap-south-1.amazonaws.com/"
+
+    #AWS CloudFront URL
+    CLOUDFRONT_URL: "https://static.launchmycareer.com/"
+    REACT_APP_COGNITO_CLOUDFRONT_URL: "https://static.launchmycareer.com/"
+
+    #CSP Allowed Domains add mulitple with ||
+    CSP_DOMAIN_ALLOW: "https://*.launchmycareer.com||https://devclever-india-dev-lyc-web-admin-0-4.0de945bd.lowtouch.cloud||https://devclever-india-dev-lyc-admin-0-4.0de945bd.lowtouch.cloud||https://admin.auth.ap-south-1.amazoncognito.com||https://devclever-india-dev-lyc-admindata-0-1.0de945bd.lowtouch.cloud||https://devclever-india-qa-lyc-admindata-0-1.0de945bd.lowtouch.cloud"
+   
+   
+    revision: 8

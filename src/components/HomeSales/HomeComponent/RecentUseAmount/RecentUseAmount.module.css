@@ -1,0 +1,22 @@
+.recentUseAmountdv{ margin-top: 25px; margin-bottom: 30px; padding: 25px 20px;}
+.sellalls{ color: #3D2AE7; font-weight: 700; text-decoration: none; margin-right: 20px;}
+.sellalls:hover{ text-decoration: underline;}
+
+.recentTable td cite{ background: #F2F1FD;border-radius: 12px; display: inline-block; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;}
+.recentTable td cite svg{ font-size: 30px; color: #8275F0;}
+.recentTable td h6{ font-weight: 700; font-size: 16px;}
+.recentTable th h6{ font-weight: 700; font-size: 16px;}
+.recentTable td p i{ font-style: normal; color: #22C55E;}
+
+.rectdimg{ padding-right: 0px; width: 77px;}
+.wrapper{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 500px) {
+    .rectdimg{ padding-right: 0px; padding-left: 0px; width: 50px;}
+}

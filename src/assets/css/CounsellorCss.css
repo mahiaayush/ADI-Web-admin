@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+.counsellorHeaderBox {
+    border: 1px solid;
+    padding: 8px;
+    background: #fff;
+    border-radius: 8px;
+    min-height: 150px;
+}
+
+.counsellorHeaderBox h2 {
+    margin: 0px 0px 10px 0px;
+  }
+  
+  .counsellorHeaderBox p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+  }
+
+  .countMainBox{ background: #fff;}
